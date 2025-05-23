@@ -11,12 +11,10 @@ export default async function handler(req, res) {
     const API_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
     try {
-        // Validar el cuerpo de la solicitud
         if (!req.body || typeof req.body !== 'object') {
             return res.status(400).json({ error: 'Invalid request body' });
         }
 
-        // Añadir configuraciones de seguridad por defecto
         const requestBody = {
             ...req.body,
             safetySettings: [
@@ -49,7 +47,6 @@ export default async function handler(req, res) {
 
         const data = await response.json();
         
-        // Validar la respuesta
         if (!data.candidates || !data.candidates[0]?.content?.parts[0]?.text) {
             throw new Error('Invalid response structure from API');
         }
