@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Lumi - Tu compañero emocional</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumi - Tu compañero emocional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-heart"></i>
+                <h1>Lumi</h1>
+            </div>
+            <p class="tagline">Tu compañero de apoyo emocional</p>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="content">
+                        <p>¡Hola! Soy Lumi, tu compañero de apoyo emocional. ¿Cómo te sientes hoy?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <button id="voice-btn" class="voice-btn">
+                    <i class="fas fa-microphone"></i>
+                </button>
+                <input type="text" id="user-input" placeholder="Escribe cómo te sientes...">
+                <button id="send-btn" class="send-btn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="country-selector">
+            <label for="country">País:</label>
+            <select id="country">
+                <option value="">Selecciona tu país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="México">México</option>
+                <option value="Perú">Perú</option>
+                <option value="EEUU">Estados Unidos</option>
+                <option value="Canadá">Canadá</option>
+                <option value="otros">Otro</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
