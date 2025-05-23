@@ -9,6 +9,7 @@
     --bot-bg: #f1f1f1;
     --user-bg: #6c63ff;
     --user-text: #fff;
+    --active-lang: #4d44db;
 }
 
 * {
@@ -36,6 +37,7 @@ body {
 header {
     text-align: center;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .logo {
@@ -60,6 +62,33 @@ header {
 .tagline {
     color: #666;
     font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.language-selector {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.lang-btn {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.lang-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
 }
 
 .chat-container {
@@ -111,6 +140,16 @@ header {
     border-radius: 18px;
     margin: 0;
     font-size: 0.95rem;
+}
+
+.content ul, .content ol {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.content h4 {
+    margin: 10px 0 5px 0;
+    color: var(--primary-color);
 }
 
 .bot-message .content p {
