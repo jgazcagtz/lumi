@@ -1,4 +1,6 @@
-
+// Configuración - Usando const en lugar de var para evitar redeclaración
+const GEMINI_API_KEY = 'AIzaSyCa1d69ilyiiQkB_wiRgFHEDbXdT7Cu0dg';
+const GEMINI_API_ENDPOINT = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
 // Elementos del DOM
 const chatMessages = document.getElementById('chat-messages');
